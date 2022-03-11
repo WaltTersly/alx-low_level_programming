@@ -5,20 +5,16 @@
 /**
   * main - Entry point
   *
-  * Return : Always 0 (Success)
+  * Return: Always 0 (Success)
   */
 
 int main(void)
-
 {
-	char lowchr = 'a';
+	char lowch;
 
-	for (lowchr = 'a'; lowchr <= 'z'; lowchr++)
-	{
-		putchar(lowchr);
-	}
-
-		putchar('\n');
+	for (lowch = 'a'; lowch <= 'z'; lowch++)
+		putchar(lowch);
+	putchar('\n');
 
 	return (0);
 }
