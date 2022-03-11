@@ -12,8 +12,9 @@ int main(void)
 	char lowchr;
 
 	for (lowchr = 'a'; lowchr <= 'z'; lowchr++)
+	{
 		putchar(lowchr);
 		putchar('\n');
-
+	}
 	return (0);
 }
