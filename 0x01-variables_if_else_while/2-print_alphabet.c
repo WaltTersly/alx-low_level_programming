@@ -1,17 +1,18 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <time.h>
 /**
  * main - print alphabet in lowercase
  *
- * return(0)
+ * Return : Always 0 (Success)
  */
 
 int main(void)
 {
-	char strng;
+	char lowchr;
 
-	for (strng = 'a'; strng <= 'z'; strng++)
-		putchar(strng);
+	for (lowchr = 'a'; lowchr <= 'z'; lowchr++)
+		putchar(lowchr);
 		putchar('\n');
 
 	return (0);
