@@ -7,13 +7,9 @@
  *      */
 int clear_bit(unsigned long int *n, unsigned int index)
 {
-	unsigned long int mask;
-
-	mask = 1;
-	mask = mask << index;
-	if (index > sizeof(unsigned long int) * 8 || n == NULL)
+	if (index > 63)
 		return (-1);
-	if (((*n >> index) & 1) == 1) /*Checks if 1 at position*/
-		*n = mask ^ *n;
+
+	*n = (~(1UL << index) & *n);
 	return (1);
 }
